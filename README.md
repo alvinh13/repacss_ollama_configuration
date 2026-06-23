@@ -26,7 +26,7 @@ Follow the steps below to run Ollama on a GPU node.
 
 ### Step 1: Request a GPU Node (H100)
 
-Use the following command to start an interactive job with 4 GPUs for 8 hours:
+Use the following command to start an interactive job with 1 GPUs for 2 hours:
 
 ```bash
 interactive -p h100 -t 02:00:00 -g 1
