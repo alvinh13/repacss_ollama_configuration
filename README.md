@@ -31,6 +31,11 @@ Use the following command to start an interactive job with 1 GPUs for 2 hours:
 ```bash
 interactive -p h100 -t 02:00:00 -g 1
 ```
+> **Note:** If this is your first time running Ollama, the setup script needs to build the container file (`ollama.sif`), which requires more memory than a single GPU session provides. For first-time setup only, use:
+> ```bash
+> salloc --partition=h100 --gpus=4 --exclusive
+> ```
+> Once the container is built, subsequent runs can use the regular `interactive` command above.
 
 ---
 
